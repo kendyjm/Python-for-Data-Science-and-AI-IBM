@@ -23,8 +23,14 @@ print("move on")
 ######### range, loops for, enumerate, range, while #########
 N = 3
 range(N)  # => sequence [0,...,N-1]
+
 print(range(3))
 print(range(10, 15))
+
+# Write a for loop the prints out all the element between -5 and 5 using the range function.
+for index in range(-5,6):
+    print(index)
+
 squares = ["red", "yellow", "green", "purple", "blue"]
 print(squares)
 for i in range(len(squares)):
@@ -127,6 +133,15 @@ print(claimedSales)
 def hello():
     print("hello")
 
+artist = "Michael Jackson"
+def printer(artist):
+    global internal_var # a way to create global variables from within a function as follows:
+    internal_var= "Whitney Houston"
+    print(artist,"is an artist")
+printer(artist)
+printer(internal_var)
+
+
 
 ##### Objects and Classes #####
 # We could find out the type of an object by using the type command.
@@ -161,5 +176,4 @@ myCircle2.toPrint()
 #  The object you're interested in is passed as an argument.
 #  The return value is a list of the objects data attributes.
 #  The attribute surrounded by underscores are for internal use, and you shouldn't have to worry about them.
-dir(myCircle2)
 print(dir(Circle))
