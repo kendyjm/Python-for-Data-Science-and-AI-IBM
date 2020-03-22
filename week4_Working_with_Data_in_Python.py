@@ -35,7 +35,7 @@ with open('resources/test.txt', 'r') as File2:
 
 # Loading Data with Pandas (popular library for Data analysis)
 import pandas as pd
-csv_path = 'resources/test.csv'
+csv_path = 'resources/TopSellingAlbums.csv'
 #dataframe = pandas.read_csv(csv_path)
 dataframe = pd.read_csv(csv_path)
 #print(dataframe.values)
@@ -46,7 +46,7 @@ print(dataframe.head())
 
 #loc is primarily label based;
 # when two arguments are used, you use column headers and row indexes to select the data you want. loc can also take an integer as a row or column number.
-item = dataframe.loc[0, "album"]
+item = dataframe.loc[0, "Album"]
 print(item)
 
 #iloc
@@ -61,8 +61,27 @@ print(item)
 
 #Using loc and iloc for slicing
 #You can also use loc and iloc to slice data frames and assign the values to a new data frame.
-newdf = dataframe.loc[0:2, "artist":"released"]
+newdf = dataframe.loc[0:2, "Artist":"Released"]
 print(newdf.head())
 
 newdf = dataframe.iloc[0:3, 0:3]
 print(newdf.head())
+
+
+#pandas: working with and saving data
+tempDataFrame = dataframe[['Released']]
+print(tempDataFrame.head())
+print(type(tempDataFrame)) #returns DataFrame
+
+dfAfter1973 = dataframe['Released'] >= 1980
+print(dfAfter1973)
+#0    False
+#1     True
+#2     True
+
+newDataFrame = dataframe[dfAfter1973]
+#c'est une forme de jointure ? s'écrit en une ligne: dataframe[dataframe['released'] >= 1973]
+print(newDataFrame)
+
+## export csv
+newDataFrame.to_csv("resources/TopSellingAlbums_filtre.csv")
