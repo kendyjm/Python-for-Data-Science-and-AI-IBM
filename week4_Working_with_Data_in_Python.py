@@ -209,7 +209,7 @@ print(u, v, "produit de 2 numy apparays=", z)
 # Calculate the dot product
 print(u, v, "produit scalaire=", np.dot(u, v))
 
-#Adding Constant to a Numpy Array
+# Adding Constant to a Numpy Array
 u = np.array([1, 2, 3, -1])
 v = u + 1
 print(u, v)
@@ -220,23 +220,57 @@ print(np.pi)
 
 # We can apply the function sin to the array x and assign the values to the array y; this applies the sine function to each element in the array:
 # Create the numpy array in radians
-x = np.array([0, np.pi/2 , np.pi])
+x = np.array([0, np.pi / 2, np.pi])
 y = np.sin(x)
 print(x, y)
 
-#Linspace¶
-#A useful function for plotting mathematical functions is "linespace".
+# Linspace¶
+# A useful function for plotting mathematical functions is "linespace".
 # Linespace returns evenly spaced numbers over a specified interval.
 # We specify the starting point of the sequence and the ending point of the sequence.
 # The parameter "num" indicates the Number of samples to generate, in this case 5:
-z = np.linspace(-5,5,10)
+z = np.linspace(-5, 5, 10)
 print("linspace(-5,5,10)", z)
 
 # Makeup a numpy array within [0, 2π] and 100 elements
-x = np.linspace(0, 2*np.pi, num=100)
+x = np.linspace(0, 2 * np.pi, num=100)
 # Calculate the sine of x list
 y = np.sin(x)
-print(x,y)
+print(x, y)
 # Plot the result
 plt.plot(x, y)
 
+#Two Dimensional Numpy
+## Calculate the dot product, produit matriciel
+a = np.array([[0,1,1], [1,0,1]])
+b = np.array([[1,1], [1,1], [-1,1]])
+c = np.dot(a, b)
+d= a*b
+print("a=", a, "b=", b, "c=", c, "d=", d)
+print("shape a=", np.shape(a))
+print("shape b=", np.shape(b))
+print("shape c=", np.shape(c))
+
+# Import the libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Create a list
+a = [[11, 12, 13, 5], [21, 22, 23, 5], [31, 32, 33, 5]]
+
+# Convert list to Numpy Array
+# Every element is the same type
+A = np.array(a)
+# Show the numpy array dimensions -> 2
+# Show the numpy array shape -> (3, 4)
+# Show the numpy array size -> 12 elements
+print(A, A.ndim, A.shape, A.size)
+
+# Create a matrix C
+C = np.array([[1,1],[2,2],[3,3]])
+# Get the transposed of C
+print(C, C.T)
+
+X=np.array([[1,0,1],[2,2,2]])
+out=X[0,1:5]
+print(out)
