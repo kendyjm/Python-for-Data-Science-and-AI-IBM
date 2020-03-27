@@ -9,7 +9,9 @@ In this assignment, you will be marked on your ability to apply Python programmi
 
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, output_notebook
-#output_notebook()
+
+
+# output_notebook()
 
 def make_dashboard(x, gdp_change, unemployment, title, file_name):
     output_file(file_name)
@@ -18,11 +20,14 @@ def make_dashboard(x, gdp_change, unemployment, title, file_name):
     p.line(x.squeeze(), unemployment.squeeze(), line_width=4, legend="% unemployed")
     show(p)
 
+
 # The dictionary links contain the CSV files with all the data.
 # The value for the key GDP is the file that contains the GDP data.
 # The value for the key unemployment contains the unemployment data.
-links={'GDP':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_gdp.csv',\
-       'unemployment':'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_unemployment.csv'}
+links = {
+    'GDP': 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_gdp.csv', \
+    'unemployment': 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_unemployment.csv'}
+
 
 # Question 1: Create a dataframe that contains the GDP data and display the first five rows of the dataframe.
 ## Use the dictionary links and the function pd.read_csv to create a Pandas dataframes that contains the GDP data.
@@ -41,6 +46,7 @@ def create_dataframe(link_key):
     print('Read {} rows from {} data file'.format(data_rows, link_key))
     return data_frame
 
+
 def get_url(link_key):
     '''
     Get data url from 'links'
@@ -50,6 +56,7 @@ def get_url(link_key):
     file_path = links[link_key]
     print("File path for {} data : {}".format(link_key, file_path))
     return file_path
+
 
 gdp_link_key = 'GDP'
 gdp_data_frame = create_dataframe(gdp_link_key)
