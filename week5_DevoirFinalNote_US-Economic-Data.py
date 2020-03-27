@@ -75,3 +75,28 @@ print(unemployment_dataframe.head())
 unemployment_percentage_column_label = 'unemployment'
 unemployment_percentage_limit = 8.5
 print(unemployment_dataframe[unemployment_dataframe[unemployment_percentage_column_label] > unemployment_percentage_limit])
+
+
+#Question 4: Use the function make_dashboard to make a dashboard
+## In this section, you will call the function make_dashboard , to produce a dashboard. We will use the convention of giving each variable the same name as the function parameter.
+## Create a new dataframe with the column 'date' called x from the dataframe that contains the GDP data.
+x = gdp_data_frame['date']
+print(x.head())
+
+## Create a new dataframe with the column 'change-current'  called gdp_change from the dataframe that contains the GDP data.
+gdp_change = gdp_data_frame['change-current']
+print(gdp_change.head())
+
+## Create a new dataframe with the column 'unemployment'  called unemployment from the dataframe that contains the unemployment data.
+unemployment = unemployment_dataframe['unemployment']
+print(unemployment.head())
+
+## Give your dashboard a string title, and assign it to the variable title
+title = "GDP's impact on the unemployment rate"
+
+# Finally, the function make_dashboard will output an .html in your direictory, just like a csv file. The name of the file is "index.html" and it will be stored in the varable file_name.
+file_name = "index.html"
+
+## Call the function make_dashboard , to produce a dashboard.
+# Assign the parameter values accordingly take a the , take a screen shot of the dashboard and submit it.
+make_dashboard(x=x, gdp_change=gdp_change, unemployment=unemployment, title=title, file_name=file_name)
