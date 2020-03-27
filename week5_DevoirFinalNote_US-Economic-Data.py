@@ -63,11 +63,15 @@ gdp_data_frame = create_dataframe(gdp_link_key)
 ## Use the method head() to display the first five rows of the GDP data, then take a screen-shot.
 print(gdp_data_frame.head())
 
-
 # Question 2: Create a dataframe that contains the unemployment data. Display the first five rows of the dataframe.
 ## Use the dictionary links and the function pd.read_csv to create a Pandas dataframes that contains the unemployment data.
 unemployment_link_key = 'unemployment'
 unemployment_dataframe = create_dataframe(unemployment_link_key)
-#Use the method head() to display the first five rows of the GDP data, then take a screen-shot.
-#I suppose there is a typo "display the first five rows of the GDP data", should be "display the first five rows of the unemployment data"
+# Use the method head() to display the first five rows of the GDP data, then take a screen-shot.
+# I suppose there is a typo "display the first five rows of the GDP data", should be "display the first five rows of the unemployment data"
 print(unemployment_dataframe.head())
+
+# Question 3: Display a dataframe where unemployment was greater than 8.5%. Take a screen-shot.
+unemployment_percentage_column_label = 'unemployment'
+unemployment_percentage_limit = 8.5
+print(unemployment_dataframe[unemployment_dataframe[unemployment_percentage_column_label] > unemployment_percentage_limit])
