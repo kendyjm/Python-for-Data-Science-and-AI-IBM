@@ -100,3 +100,9 @@ file_name = "index.html"
 ## Call the function make_dashboard , to produce a dashboard.
 # Assign the parameter values accordingly take a the , take a screen shot of the dashboard and submit it.
 make_dashboard(x=x, gdp_change=gdp_change, unemployment=unemployment, title=title, file_name=file_name)
+
+# SHARE
+## dashboard
+https://s3.eu.cloud-object-storage.appdomain.cloud/useconomicdata-donotdelete-pr-eks9pfueanouna//home/dsxuser/work/index.html?AWSAccessKeyId=e91fda3020494203b27f05e6e2d196b6&Signature=CGc1%2BPH%2FU5Y7n8KbgmgfZC8xbBc%3D&Expires=1585933904
+## notebook
+https://eu-gb.dataplatf_orm.cloud.ibm.com/analytics/notebooks/v2/8ad1343e-883c-4874-864c-15ed6203ceb3/view?access_token=7acc606e0f8f6c57efd2316bf4da3a2db545e667a7f9311622d0f3bd7737e145
