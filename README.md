@@ -1,4 +1,4 @@
-#BADGE/CERTIFICAT
+#BADGE CERTIFICAT
 
 * URL: https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X
 
