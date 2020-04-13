@@ -1,5 +1,6 @@
 #BADGE/CERTIFICAT
-https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X
+
+* URL: https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X
 
 Earning the Coursera certificate for this course will entitle you to receive an IBM digital badge without any additional charge.
 (Note: payment is required to have full access to the course and to be eligible to qualify for the course certificate.)
