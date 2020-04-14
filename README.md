@@ -1,5 +1,17 @@
-# BADGE CERTIFICAT
+# Context
+* **Formation** : https://www.coursera.org/learn/python-for-applied-data-science-ai
 
+# Keywords
+Pycharm, Jupyter , Pandas, Numpy, matplotlib, IBM Watson studio.
+
+IBM Speech to Text is a service that converts speech in audio format into text.
+Watson Speech to Text is a service that uses deep learning algorithms to convert speech to text.
+IBM Language Translator converts one language to another.
+NOTE: In order to complete this the lab in this section you will be creating an IBM Cloud account and create an instance of IBM Speech to Text and IBM Language Translator and obtain their respective API Keys.
+
+
+
+# BADGE CERTIFICAT
 * URL: https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X
 
 Earning the Coursera certificate for this course will entitle you to receive an IBM digital badge without any additional charge.
