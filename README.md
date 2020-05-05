@@ -1,10 +1,15 @@
-# Context
+# Python for Data Science and AI - IBM
+
+## Context
 
 * **Learning** : <https://www.coursera.org/learn/python-for-applied-data-science-ai>
   * <https://www.youracclaim.com/org/ibm/badge/python-for-data-science-and-ai>
-* **Course Certificat** : <https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X>
 
-# Keywords
+### Course Certificat
+
+<https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X>
+
+## Keywords
 
 Pycharm, Jupyter , Pandas, Numpy, matplotlib, IBM Watson studio.
 
