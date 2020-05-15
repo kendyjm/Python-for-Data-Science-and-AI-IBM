@@ -5,6 +5,10 @@
 * **Learning** : <https://www.coursera.org/learn/python-for-applied-data-science-ai>
   * <https://www.youracclaim.com/org/ibm/badge/python-for-data-science-and-ai>
 
+Instructor:
+
+* [Joseph Santarcangelo, Ph.D. Data Scientist at IBM](https://www.linkedin.com/in/joseph-s-50398b136/)
+
 ### Course Certificat
 
 <https://www.coursera.org/account/accomplishments/certificate/XG6683GGEY3X>
